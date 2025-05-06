@@ -8,7 +8,8 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [react()],
-    base: env.VITE_BASE_URL || '/',
+    // Modificación clave aquí:
+    base: mode === 'production' ? '/girasol/' : '/',
     build: {
       rollupOptions: {
         output: {
