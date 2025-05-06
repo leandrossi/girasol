@@ -7,7 +7,6 @@ export default defineConfig({
   base: process.env.VITE_BASE_URL,
   build: {
     rollupOptions: {
-      input: './src/main.tsx',
       output: {
         entryFileNames: 'assets/[name].js',
         chunkFileNames: 'assets/[name].js',
